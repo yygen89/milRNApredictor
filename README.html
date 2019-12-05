@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<title>milRNApredictor User Manual</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<h2 align="center">milRNApredictor User Manual (Version 1.0.0) </h2>
+
+<p> December 4 2019</p>
+
+
+
+<hr>
+
+
+<h3>About This Program</h3>
+
+<p>
+
+MicroRNA-like small RNAs (milRNAs) with length of 21~22 nucleotides are a type of small non-coding RNAs that are firstly found in Neurospora crassa in 2010. 
+Identifying milRNAs of species without genomic information is a dif&#64257;cult problem. In this article, a set of knowledge-based energy features is proposed to identify milRNAs 
+by tactfully incorporating k-mer scheme in bioinformatics and distance-dependent pair potential in statistical physics. Compared with k-mer scheme, features developed here
+ can alleviate the inherent curse of dimensionality in k-scheme once k becomes large. In addition, milRNApredictor built on novel features performs comparably to k-mer scheme, 
+ and achieves precision of 75.34%, accuracy of 74.96%, sensitivity of 74.21%, and specificity of 75.72% based on 10-fold cross-validation. Furthermore, for novel miRNA prediction, 
+ there exists high overlap of results from milRNApredictor and state-of-the-art mirnovo. However, milRNApredictor is simpler and more flexible to use with reduced requirements of input data and dependencies. 
+ Taken together, milRNApredictor can be used to de novo identify milRNAs and other very short small RNAs of non-model organisms, without information of precursor and genome.
+  Finally, the local software is freely available to the academic community.
+
+
+</p>
+
+<p>&nbsp;</p>
+<hr>
+
+
+
+<h3>Input, output, dependencies, and platforms of milRNApredictor</h3>
+
+All necessary scripts and data are contained in the package. 
+MilRNApredictor can run both on Windows and Linux platforms. 
+Perl (v5.24.1), R (v3.2.2) and randomForest R package (v4.6-14), with the recommended versions in parentheses, are required to preinstall in local machines. 
+MilRNApredictor receives a FASTA-formatted input file containing nucleotide sequences. 
+The predicted label and corresponding score for each sample can be found in the output file of milRNApredictor. 
+
+
+<p>&nbsp;</p>
+<hr>
+
+<h3>Run</h3>
+
+<p>Unzip the package of milRNApredictor, and then enter the directory of milRNApredictor.</p>
+ <p>You need to call milRNApredictor.pl from inside the milRNApredictor directory!</p>
+ 
+  <p>&nbsp;</p>
+ 
+<p>perl milRNApredictor.pl -P &lt;postive FASTA&gt; -N &lt;negative FASTA&gt; -T &lt;test FASTA&gt; </p>
+
+
+<p>&nbsp;</p>
+<hr>
+
+
+
+<h3>Availability</h3>
+<p>Our softwares are freely available for academic researches. 
+For non-profit users, you can copy, distribute and use the softwares for your scientific studies. 
+Our softwares are not free for commercial usage.
+
+<p>For ordering information please please contact us.</p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+
+
+<h3>Citation</h3>
+<p>If the software has been helpful for your work, we wish you could cite the article.</p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<h3>Contacting the Author</h3>
+
+<p>We'd like to hear your questions and comments!</p>
+
+</strong>If you are having trouble getting your executable to run, please contact <a href="mailto:yyg@mail.hzau.edu.cn">Dr. Yuangen Yao</a> by E-mail: yyg@mail.hzau.edu.cn</p>
+<p>Department of Physics, College of Science, Huazhong Agricultural University, Wuhan, Hubei 430070, China</p>
+
+
+<p>&nbsp;</p>
+
+<hr>
+
+
+</body>
+</html>
